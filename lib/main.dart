@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Groceries',
-      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      theme: ThemeData(
+          appBarTheme: const AppBarTheme(color: Color(0xfff4f4f4)),
+          scaffoldBackgroundColor: const Color(0xfff4f4f4)),
       home: const ContactsList(),
     );
   }
